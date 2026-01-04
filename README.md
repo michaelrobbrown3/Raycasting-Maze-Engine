@@ -14,6 +14,7 @@ to a DDA-based approach to remove fisheye distortion and improve accuracy.
 - Basic ray marching
 - Demonstrates 2D → 3D projection
 - Suffers from fisheye distortion
+- Uses a simple but inefficient raycasting approach
 - Built quickly as a proof of concept
 
 ### Version 2 – DDA Raycasting (In Progress)
