@@ -42,3 +42,16 @@ to a DDA-based approach to remove fisheye distortion and improve accuracy.
 Install dependencies:
 ```bash
 pip install pygame
+
+---
+
+## How to Run
+
+```bash
+
+# Version 1 – Marching Step Raycasting
+python marching_raycast.py
+
+# Version 2 – DDA Raycasting
+python DDA_raycast.py
+
