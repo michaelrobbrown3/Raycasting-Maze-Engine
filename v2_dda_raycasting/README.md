@@ -9,7 +9,7 @@ rendering of the same 2D maze.
 
 ---
 
-## Improvements Over Version 1
+## Improvements From Version 1
 
 - Grid-based **DDA ray traversal**
 - Fisheye distortion correction
