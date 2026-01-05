@@ -1,5 +1,4 @@
-## Version 2 – DDA Raycasting
-# 2D → 3D Raycasting Maze (Version 2)
+# Version 2 – DDA Raycasting
 
 This version improves upon the original ray-marching implementation by
 using **DDA (Digital Differential Analyzer) raycasting** and correcting
