@@ -35,23 +35,4 @@ screen, creating a 3D effect.
   equally spaced ray angles with linear screen columns
 - Ray marching is less efficient than grid-based methods (e.g. DDA)
 
----
-
-## Controls
-
-- **W / S** – Move forward / backward  
-- **A / D** – Strafe left / right  
-- **Left / Right Arrow** – Rotate  
-- **Mouse click “View”** – Toggle 2D / 3D mode  
-
----
-
-## Requirements
-
-- Python 3.x
-- Pygame
-
-Install dependencies:
-```bash
-pip install pygame
 
