@@ -1,18 +1,57 @@
 ## Version 1 – Marching-Step Raycasting
 
-This version renders a 3D first-person view of a 2D maze by casting
-rays from the player’s position and incrementally stepping forward
-until a wall cell is encountered.
+This project demonstrates how a 2D maze can be rendered as a 3D
+first-person view using a marching-step raycasting technique.
 
-### Features
-- 2D top-down maze representation
+Inspired by early engines such as **DOOM**, the world is stored as a
+2D grid and rays are cast from the player’s position to determine
+visible walls.
+
+---
+
+## Features
+
+- 2D top-down maze view
 - 3D first-person projection
-- Ray marching–based collision detection
-- Toggle between 2D and 3D views (via the "View" button)
+- Marching-step raycasting
+- Toggle between 2D and 3D views
+- Basic collision detection
 
-### Limitations
-- Fisheye distortion due to uncorrected ray distances
-- Less efficient than grid-based ray traversal methods (e.g. DDA)
+---
 
-This version was built as a proof of concept inspired by
-early raycasting engines such as **DOOM**.
+## How It Works
+
+Rays are cast from the player at equally spaced angles across the field
+of view. Each ray advances forward in small steps until it hits a wall.
+The distance to the wall is then used to draw a vertical slice on the
+screen, creating a 3D effect.
+
+---
+
+## Limitations
+
+- **Fisheye distortion** due to uncorrected ray distances
+- **Slight wall curvature near the screen edges** caused by using
+  equally spaced ray angles with linear screen columns
+- Ray marching is less efficient than grid-based methods (e.g. DDA)
+
+---
+
+## Controls
+
+- **W / S** – Move forward / backward  
+- **A / D** – Strafe left / right  
+- **Left / Right Arrow** – Rotate  
+- **Mouse click “View”** – Toggle 2D / 3D mode  
+
+---
+
+## Requirements
+
+- Python 3.x
+- Pygame
+
+Install dependencies:
+```bash
+pip install pygame
+
