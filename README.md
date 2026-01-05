@@ -32,3 +32,13 @@ to a DDA-based approach to remove fisheye distortion and improve accuracy.
 - Left / Right Arrow – Rotate
 - Click “View” – Toggle 2D / 3D view
 
+---
+
+## Requirements
+
+- Python 3.x
+- Pygame
+
+Install dependencies:
+```bash
+pip install pygame
