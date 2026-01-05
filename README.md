@@ -7,6 +7,7 @@ using raycasting techniques inspired by early games like DOOM.
 The project started as a simple marching-step raycaster and was later upgraded
 to a DDA-based approach to remove fisheye distortion and improve accuracy.
 
+---
 
 ## Project Evolution
 
@@ -22,3 +23,12 @@ to a DDA-based approach to remove fisheye distortion and improve accuracy.
 - Corrects fisheye distortion
 - More accurate wall distance calculation
 - Closer to classic DOOM-style rendering
+
+---
+
+## Controls
+- W / S – Move forward / backward
+- A / D – Strafe left / right
+- Left / Right Arrow – Rotate
+- Click “View” – Toggle 2D / 3D view
+
