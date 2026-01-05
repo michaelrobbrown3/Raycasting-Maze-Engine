@@ -1,25 +1,57 @@
-## Version 2 – DDA Raycasting (No Fisheye)
+## Version 2 – DDA Raycasting
+# 2D → 3D Raycasting Maze (Version 2)
 
-This version replaces the marching-step raycasting approach with a
-Digital Differential Analyzer (DDA) algorithm to traverse the grid
-cell-by-cell until a wall is encountered.
+This version improves upon the original ray-marching implementation by
+using **DDA (Digital Differential Analyzer) raycasting** and correcting
+fisheye distortion.
 
-By calculating exact grid intersections, this implementation:
-- Eliminates fisheye distortion
-- Improves performance
-- Produces more accurate wall distances
+The result is a more accurate, efficient, and visually stable 3D
+rendering of the same 2D maze.
 
-### Key Improvements Over Version 1
-- Grid-based DDA ray traversal
-- Correct perpendicular wall distance calculation
-- Increased ray count with better performance
-- Cleaner and more stable 3D projection
+---
 
-### Features
-- 2D top-down debug view with ray visualization
-- 3D first-person rendering without fisheye distortion
-- Smooth player movement and strafing
-- Toggle between 2D and 3D views
+## Improvements Over Version 1
 
-This implementation is inspired by the raycasting techniques used
-in early engines such as **DOOM** and **Wolfenstein 3D**.
+- Grid-based **DDA ray traversal**
+- Fisheye distortion correction
+- More consistent wall heights across the field of view
+- Improved performance compared to marching-step raycasting
+
+---
+
+## How It Works
+
+Each ray advances from grid cell to grid cell using DDA, efficiently
+determining horizontal or vertical wall intersections.  
+Perpendicular wall distance is calculated to correct fisheye distortion
+before projecting wall slices onto the screen.
+
+---
+
+## Remaining Limitations
+
+- Slight wall curvature near the edges of the field of view due to
+  equally spaced ray angles mapped to linear screen columns
+- Basic lighting and flat shading
+- No texture mapping or vertical look
+
+---
+
+## Controls
+
+- **W / S** – Move forward / backward  
+- **A / D** – Strafe left / right  
+- **Left / Right Arrow** – Rotate  
+- **Mouse click “View”** – Toggle 2D / 3D mode  
+
+---
+
+## Requirements
+
+- Python 3.x
+- Pygame
+
+Install dependencies:
+```bash
+pip install pygame
+
