@@ -1,4 +1,4 @@
-## Version 1 – Marching-Step Raycasting
+# Version 1 – Marching-Step Raycasting
 
 This project demonstrates how a 2D maze can be rendered as a 3D
 first-person view using a marching-step raycasting technique.
