@@ -34,23 +34,5 @@ before projecting wall slices onto the screen.
 - Basic lighting and flat shading
 - No texture mapping or vertical look
 
----
 
-## Controls
-
-- **W / S** – Move forward / backward  
-- **A / D** – Strafe left / right  
-- **Left / Right Arrow** – Rotate  
-- **Mouse click “View”** – Toggle 2D / 3D mode  
-
----
-
-## Requirements
-
-- Python 3.x
-- Pygame
-
-Install dependencies:
-```bash
-pip install pygame
 
