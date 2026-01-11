@@ -9,6 +9,14 @@ to a DDA-based approach to remove fisheye distortion and improve accuracy.
 
 ---
 
+## Preview (Version 2 – DDA Raycasting)
+
+| 2D Map View | 3D First-Person View |
+|------------|----------------------|
+| ![](screenshots/v2_2D_View.png) | ![](screenshots/v2_3D_View.png) |
+
+---
+
 ## Project Evolution
 
 ### Version 1 – Marching Step Raycasting
