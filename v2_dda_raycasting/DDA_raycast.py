@@ -352,6 +352,6 @@ class Window:
 
 
 maze = Window()
-vel = 1
+vel = 0.25
 rot_vel = 1
 maze.main_loop(vel)
